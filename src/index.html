@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Virtual Keyboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../src/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <h2 id="title">Virtual Keyboard</h2>
+    <div id="container">
+        <div class="txt-container">
+            <textarea name="TEXT AREA" cols="30" rows="10" placeholder="TEXT AREA" id="txtArea"></textarea>
+        </div>
+        <div class="keyboard-container">
+            <div id="upper">
+                <button type="button" value="1" class="key">1</button>
+                <button type="button" value="2" class="key">2</button>
+                <button type="button" value="3" class="key">3</button>
+                <button type="button" value="4" class="key">4</button>
+                <button type="button" value="5" class="key">5</button>
+                <button type="button" value="6" class="key">6</button>
+                <button type="button" value="7" class="key">7</button>
+                <button type="button" value="8" class="key">8</button>
+                <button type="button" value="9" class="key">9</button>
+                <button type="button" value="0" class="key">0</button>
+                <button type="button" value="back-space" id="back-space" class="key">Back Space</button>
+                <button type="button" value="q" class="key">q</button>
+                <button type="button" value="w" class="key">w</button>
+                <button type="button" value="e" class="key">e</button>
+                <button type="button" value="r" class="key">r</button>
+                <button type="button" value="t" class="key">t</button>
+                <button type="button" value="y" class="key">y</button>
+                <button type="button" value="u" class="key">u</button>
+                <button type="button" value="i" class="key">i</button>
+                <button type="button" value="o" class="key">o</button>
+                <button type="button" value="p" class="key">p</button>
+            </div>
+            <div id="middle">
+                <button type="button" value="a" class="key">a</button>
+                <button type="button" value="s" class="key">s</button>
+                <button type="button" value="d" class="key">d</button>
+                <button type="button" value="f" class="key">f</button>
+                <button type="button" value="g" class="key">g</button>
+                <button type="button" value="h" class="key">h</button>
+                <button type="button" value="j" class="key">j</button>
+                <button type="button" value="k" class="key">k</button>
+                <button type="button" value="l" class="key">l</button>
+                <button type="button" value="ok" id="ok" class="key">OK</button>
+                <button type="button" value="capsLock" id="capsLock" class="key">Caps Lock</button>
+                <button type="button" value="z" class="key">z</button>
+                <button type="button" value="x" class="key">x</button>
+                <button type="button" value="c" class="key">c</button>
+                <button type="button" value="v" class="key">v</button>
+                <button type="button" value="b" class="key">b</button>
+                <button type="button" value="n" class="key">n</button>
+                <button type="button" value="m" class="key">m</button>
+                <button type="button" value="-" class="key">-</button>
+                <button type="button" value="_" class="key">_</button>
+                <button type="button" value="shift" id="shift" class="key">Shift</button>
+            </div>
+            <div id="lower">
+                <button type="button" id="space" value=" " class="key">Space</button>
+                <button type="button" id="enter" class="key">Enter</button>
+            </div>
+        </div>
+    </div>
+    <script src="../src/index.js" async defer></script>
+</body>
+
+</html>

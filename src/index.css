@@ -1,0 +1,143 @@
+html {
+    font-size: 100%;
+  }
+
+#title {
+  text-align: center;
+  color: rgb(45, 175, 226);
+}
+
+  
+  #container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 6px;
+  }
+  
+  .txt-container {
+    width: 50%;
+  }
+  
+  .keyboard-container {
+    width: 50%;
+  }
+  
+  textarea {
+    width: 100%;
+    background-color: rgb(226, 236, 255);
+    border-width: 2px;
+    border-color: rgb(102, 127, 150);
+    box-sizing: border-box;
+  }
+  
+  textarea::placeholder {
+    color: rgb(98, 169, 197);
+  }
+  
+  button {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    cursor: pointer;
+    border: 2px solid #000000;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    list-style-type: none;
+    outline: none;
+ 
+
+  }
+
+  button:active {
+    background-color: #db9600;
+    outline: none;
+  }
+  
+
+#upper, #middle {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 40px);
+}
+
+#lower {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px;
+  }
+
+#back-space {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#space {
+    grid-column: span 9;
+  }
+  
+#ok {
+  grid-row: span 2;
+}
+
+#capsLock {
+  grid-column: span 2;
+}
+
+#shift {
+  grid-column: span 2;
+}
+
+#enter {
+  grid-column: span 3;
+}
+
+
+  
+  /* Media Querry */
+  @media screen and (max-width: 1000px) {
+    .keyboard-container {
+      width: 60%;
+    }
+    .text-container {
+      width: 60%;
+    }
+    button {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .keyboard-container {
+      width: 80%;
+    }
+    .text-container {
+      width: 80%;
+    }
+    button {
+      font-size: 1.2rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .keyboard-container {
+      width: 95%;
+    }
+    .text-container {
+      width: 95%;
+    }
+    button {
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
+  
